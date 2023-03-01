@@ -1,4 +1,3 @@
-export type Printers = Printer[];
 export interface Printer {
   id: number;
   name: string;
@@ -6,8 +5,8 @@ export interface Printer {
   brand: string;
   stock: number;
 }
+export type Printers = Printer[];
 
-export type Users = User[];
 export interface User {
   id: number;
   username: string;
@@ -15,11 +14,19 @@ export interface User {
   isLogged: boolean;
   token: string;
   address: string;
+  shoppingCart: Printers;
 }
+export type Users = User[];
 
 export interface Order {
   id: number;
   product: Printer;
   totalPrice: number;
-  status: boolean;
+  status?: Status;
+}
+
+export enum Status {
+  inProgress,
+  completed,
+  recieved,
 }

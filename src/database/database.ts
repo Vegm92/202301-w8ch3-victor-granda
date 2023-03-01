@@ -81,6 +81,7 @@ export const users: Users = [
     email: "johnsmith@example.com",
     isLogged: true,
     address: "123 Main St, Anytown, USA",
+    shoppingCart: [],
   },
   {
     id: 2,
@@ -89,6 +90,7 @@ export const users: Users = [
     email: "janesmith@example.com",
     isLogged: false,
     address: "456 Oak St, Anytown, USA",
+    shoppingCart: [],
   },
   {
     id: 3,
@@ -97,6 +99,7 @@ export const users: Users = [
     email: "bobdylan@example.com",
     isLogged: true,
     address: "789 Elm St, Anytown, USA",
+    shoppingCart: [],
   },
   {
     id: 4,
@@ -105,6 +108,7 @@ export const users: Users = [
     email: "alice@example.com",
     isLogged: false,
     address: "111 Maple St, Anytown, USA",
+    shoppingCart: [],
   },
   {
     id: 5,
@@ -113,5 +117,6 @@ export const users: Users = [
     email: "charliebrown@example.com",
     isLogged: true,
     address: "222 Pine St, Anytown, USA",
+    shoppingCart: [],
   },
 ];
